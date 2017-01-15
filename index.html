@@ -10,12 +10,20 @@
 <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEhoXruNUmILrID88nhjFUV-j7xeUrASwxI9AIZdIY-q2DWRs" alt="Pineapple here">
 </body>
 
-<div ng-app="">
+<div ng-app="myApp" ng-controller="myCtrl">
 
-<p>Name: <input type="text" ng-model="name"></p>
-<p>You wrote: {{ name }}</p> 
+Name: <input type="text" ng-model="name">
+<br>
+You wrote: {{ name }}
 
 </div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.name="Monica"
+});
+</script>
 
 
 </html>
