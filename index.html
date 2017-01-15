@@ -11,16 +11,18 @@
 
 <div ng-app="myApp" ng-controller="myCtrl">
 
-Name: <input type="text" ng-model="name"><br>
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
 <br>
-You wrote: {{name}}
+Full Name: {{firstName + " " + lastName}}
 
 </div>
 
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
-    $scope.name="Monica";
+    $scope.firstName= "John";
+    $scope.lastName= "Doe";
 });
 </script>
 
