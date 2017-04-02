@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.button {
-    background-color: #bff2e3;
-    border: none;
-    color: gray;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.button1 {border-radius: 8px;}
-</style>
 <meta charset="utf-8"/>
 <title>Alice Wen Portfolio</title>
 
@@ -34,22 +19,27 @@
 		<li><a href = "contact.html">Contact</a></li>
 	</ul>
 
-	<div id = "header">
-		<h1>Hi! I'm Alice Wen.</h1>
-		<h2>I am an undergraduate student studying Computer Science at UC Irvine. Check out some of my fun projects!&#10;</h2>
+	<div id="contact" class = "page">
+	 		<h1>Send an email</h1>
+	 		<div id="form">
+	 		 <form name="myemailform" action="form-to-email.php" method="post">
+				<fieldset>
+ 				<label for="name">Name</label>
+ 				<input type="text" id = "name" placeholder = "Enter your full name"/>
+ 
+ 				<label for ="email">Email:</label>
+				<input type="email" id ="email" placeholder="Enter your email address"/>
 
-		<a href="portfolio.html" target="_blank"><button class="button button1">Check out my Projects</button></a>
+ 				<label for="message">Message:</label>
+ 				<textarea id="message" placeholder="What's on your mind?"></textarea>
+ 
+ 				<input type="submit" value="Send message"/>
+ 			</fieldset>
+ 		</form>
+ 	</div>
 	</div>
 
-	<div id = "content">
-		<h3>About Alice Wen</h3>
-
-		<p>I love photography, music, and Youtube. Another big part of my life is food. In fact, I am the founder and a dedicated writer for my campus's Spoon University, a national collegiate food blog.</p>
-
-	</div>
-
-	</div>
-
+</div>
 
 		<div id="share-buttons">
 		<h2>Find me on social media: </h2>
@@ -85,12 +75,16 @@
         	<img src="images/linkedin.png" />
     		</a>
 
-		</div>
 
+  
+
+
+		</div>
 	<div id="footer">
 	<p id="copyright">&copy; Alice Wen</p>
 	<p id="back-top"><a href="#">Back to the top</a></p>
 </div>
+
 
 </body>
 </html>
